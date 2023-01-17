@@ -16,3 +16,10 @@ body {
     padding: 100px;
     border-radius: 50%;
 }
+
+p {
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 900;
+    margin-top: 20px;
+}
