@@ -1,16 +1,14 @@
 let discoBulb = document.querySelector('i')
-let color = ['blue', 'red', 'yellow']
-
-for (let i = 0; i < color.length; i++) {
-    console.log(color[i])
-}
+let i = 0;
 
 function discoSwitch() {
-    console.log('clicked')
-    if (discoBulb.style.backgroundColor.match('black')) {
-        discoBulb.style.backgroundColor = color[0]
+    if (discoBulb.style.background == 'white') {
+        setInterval(function() {
+            let color = generateRandomColor();
+            discoBulb.style.background = color
+        }, 50)
     } else {
-        discoBulb.style.backgroundColor = 'black'
+        discoBulb.style.background = 'black'
     }
 }
 
